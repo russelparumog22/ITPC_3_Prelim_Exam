@@ -5,35 +5,44 @@
 </head>
 
 
-<body style="background: #5d84c2">
- <h1 style="text-align: center;"> 
-    Welcome to my website
-</h1 style="text-align: center;">
-<div style="text-align: center;">
- <div style="margin-bottom: 1rem;">
-<input type="text" placeholder="Username">
- </div>
-    <div style="margin-bottom: 1rem;" >
- <input type="text" placeholder="password">
-</div>
+<body style="background: #4446a6">
+    <h1 style="text-align: center;">Registration Form</h1>
+    <div style="text-align: center;">
+        <div style="margin-bottom: 1rem;">
+            <input type="text" placeholder="Username" />
+        </div>
+        <div style="margin-bottom: 1rem;">
+            <input type="password" placeholder="Password" />
+        </div>
+        <div style="margin-bottom: 1rem;">
+            <input type="password" placeholder="Confirm Password" />
+        </div>
+        <div style="margin-bottom: 1rem;">
+            <input type="text" placeholder="First Name" />
+        </div>
+        <div style="margin-bottom: 1rem;">
+            <input type="text" placeholder="Last Name" />
+        </div>
+        <div>
+            
+            <a href="./index.html">
+                <button style="color: green;">Cancel
+                    </button>
+                </a>
+            <button style="color: green;" onclick="register()">Register</button>
+        </div>
+    </div>
 
-<div style="margin-bottom: 1rem;">
-    <input type="text" placeholder="Confirm Password">
-   </div>
+    <script>
+        function register() {
+           
+            alert("Registration successful!");
+        }
 
-   <div style="margin-bottom: 1rem;">
-    <input type="text" placeholder="First Name">
-   </div>
-
-   <div style="margin-bottom: 1rem;">
-    <input type="text" placeholder="Last Name">
-   </div>
-
-   <div>
-    <button style="color: red;">Cancel</button>
-    <button style="color: green;">Register</button>
-   </div> 
-
+        function cancel() {
+            
+            window.location.href = "login.html"; 
+        }
+    </script>
 </body>
 </html>
-
