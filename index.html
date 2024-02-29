@@ -1,31 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <style>
+    body {
+      background: #5d84c2;
+    }
+    h1 {
+      text-align: center;
+    }
+    div {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    input[type="text"],
+    input[type="password"],
+    button {
+      margin-bottom: 1rem;
+    }
+    button {
+      color: blue;
+    }
+    a {
+      color: green;
+    }
+  </style>
 </head>
+<body style="background: #5d84c2;">
+  <h1 style="text-align: center;">Welcome to my website</h1>
+  <div style="text-align: center; margin-bottom: 1rem;">
+    <input type="text" placeholder="Username">
+  </div>
+  <div style="text-align: center; margin-bottom: 1rem;">
+    <input type="password" placeholder="Password">
+  </div>
+  <div>
+    <button id="btnLogin">Login</button>
+    <a href="./register.html">Register</a>
+  </div>
+  
 
-
-<body style="background: #5d84c2">
- <h1 style="text-align: center;"> 
-    Welcome to my website
-</h1>
-<div style="text-align: center;">
- <div style="margin-bottom: 1rem;">
-<input type="text" placeholder="Username">
- </div>
-    <div style="margin-bottom: 1rem;">
- <input type="text" placeholder="password">
-</div>
-
-<div>
-    <button style="color: blue;">Login</button>
-    <a href="./register.html">
-    <button style="color: green;">Register
-        </button>
-    </a>
-    <p>Forgot password? Click <a href="./forgotpassword.html">here</a></p>
-    <a href="./about us.html">About us</a>
-</div>
+  <script>
+    console.log("LOGIN SUCCESSFULLY");
+    let buttonLogin = document.querySelector("#btnLogin");
+    buttonLogin.addEventListener('click', function() {
+      alert("Login Successful!");
+    });
+  </script>
 </body>
 </html>
-
